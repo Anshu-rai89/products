@@ -1,6 +1,6 @@
 const mongoose=require('mongoose');
 
-
+// craeting product schema
 const productSchema=new mongoose.Schema(
     {   name:
         {
@@ -15,7 +15,7 @@ const productSchema=new mongoose.Schema(
     },{timestamps:true}
 );
 
-
+// regidtring scema  in db
 const Product=mongoose.model('Product1',productSchema);
 
 module.exports=Product;
