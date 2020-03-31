@@ -4,14 +4,10 @@ const port=9000;
 const app=express();
 
 //  requiring Database
-const db=require('./configs/mongoose');
+const db=require('./config/mongoose');
 
 // using passport lib for authentication
-const passport=require('passport');
-const session=require('express-session');
-const MongoStore=require('connect-mongo')(session);
 
-const passportjwt=require('./configs/passport-jwt');
 
 
 // using middlewares
